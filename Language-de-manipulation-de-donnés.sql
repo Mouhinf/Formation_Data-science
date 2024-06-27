@@ -15,7 +15,7 @@ INSERT INTO commandes (costumerid, productid, quantite, order_date) VALUES (2, 1
 
 /* Mise à jour de la quantite de la deuxieme commande */
 UPDATE commandes
-SET quantity = 6
+SET quantite = 6
 WHERE costumerid = 2 AND productid = 1 AND order_date = '2023-04-14';
 
 /* Suppression du troisième client de la table clients */
