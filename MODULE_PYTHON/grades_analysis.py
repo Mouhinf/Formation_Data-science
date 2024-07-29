@@ -1,0 +1,21 @@
+import numpy as np
+
+note = np.array([85, 90, 88, 92, 95, 80, 75, 98, 89, 83])
+moy = np.mean(note)
+print("La moyenne du tableau note est", moy)
+mediane = np.median(note)
+print("La médiane du tableau note est", mediane)
+ecart_type = np.std(note)
+print("L'ecart type de tableau note est", ecart_type)
+maximum = np.max(note)
+print("Le maximum du tableau note est", maximum)
+minimum = np.min(note)
+print("Le minimun du tableau note est", minimum)
+t = np.min(note)
+croissant = np.sort(note)
+print("Le tableau  trié par ordre croissant", croissant)
+eleve = np.argmax(note)
+print("L'index de la valeur la plus élevé du tableau est", eleve)
+score = 90
+nbe = np.count_nonzero(note > score )
+print("Le nombre d'étudiant ayant une note supérieure à 90 sont au nombre de", nbe)
