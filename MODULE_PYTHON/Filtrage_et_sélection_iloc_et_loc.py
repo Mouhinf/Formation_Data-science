@@ -19,3 +19,7 @@ dm = employee_df.iloc[0:4, 2:4]
 print("Voici la sélection des colonnes Ages et Sexe pour les 4 premieres lignes du dataframe :")
 print(dm)
 
+employee_df.index = ['Nom', 'Département', 'Âge', 'Sexe', 'Salaire', 'Expérience']
+dn = employee_df.loc["Salaire", "Expérience"]
+print("Voici les colonnes des salaires et expérience pour toutes les lignes où le sexe est homme")
+print(dn)
