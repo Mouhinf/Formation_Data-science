@@ -34,18 +34,4 @@ while should_continue:
         reponse = multiplier(calculation_function, m )
     if op == "/" : 
         reponse = division(calculation_function, m )
-    print(calculation_function, op, m,"=", reponse)
-    rep = input("Aimeriez vous ituliser  le resultat comme premier nombre pour d'autres calculs ? Tapez 'oui' ou 'non'")
-    if rep == "oui" or rep == "Oui" or rep == "OUI": 
-        if op == "+" : 
-            reponse = ajouter(calculation_function, reponse )
-        if op == "-" :
-            reponse = soustraire(calculation_function, reponse ) 
-        if op == "x" : 
-            reponse = multiplier(calculation_function, reponse)
-        if op == "/" : 
-            reponse = division(calculation_function, reponse)
-    else :
-        should_continue = False
-        calculatrice()
-       
+    print(calculation_function, op, m,"="
