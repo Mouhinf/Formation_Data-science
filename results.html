@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #007BFF; /* Couleur bleu */
+        }
+        .result {
+            background-color: #f0f8ff; /* Bleu clair */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007BFF; /* Couleur bleu */
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #0056b3; /* Couleur bleu plus foncé au survol */
+        }
+    </style>
+</head>
+<body>
+    <h1>Résultat de la Prédiction</h1>
+    <div class="result">
+        <p>La fuite est : {{ result }}</p>
+    </div>
+    <a href="/">Retour</a>
+</body>
+</html>
