@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prédire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #007BFF; /* Couleur bleu */
+        }
+        form {
+            background-color: #f0f8ff; /* Bleu clair */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            margin: 10px 0 5px;
+            display: block;
+        }
+        input[type="text"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #007BFF;
+        }
+        input[type="submit"] {
+            background-color: #007BFF; /* Couleur bleu */
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Couleur bleu plus foncé au survol */
+        }
+    </style>
+</head>
+<body>
+    <h1>Prédire la Fuite</h1>
+    <form action="/predict" method="POST">
+        <label for="Production">Production :</label>
+        <input type="text" name="Production" required><br>
+        
+        <label for="diff">Diff :</label>
+        <input type="text" name="diff" required><br>
+        
+        <label for="stock">Stock :</label>
+        <input type="text" name="stock" required><br>
+        
+        <label for="pourcent_fuite">Pourcent Fuite :</label>
+        <input type="text" name="pourcent_fuite" required><br>
+        
+        <input type="submit" value="Prédire">
+    </form>
+</body>
+</html>
+
