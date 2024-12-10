@@ -1,6 +1,5 @@
-cv2
-streamlit
 opencv-python
+streamlit
 numpy
 tensorflow
 mtcnn
