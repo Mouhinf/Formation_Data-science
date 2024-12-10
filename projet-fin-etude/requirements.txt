@@ -1,5 +1,5 @@
-opencv-python
 streamlit
-numpy
-tensorflow
+opencv-python
+keras
 mtcnn
+numpy
