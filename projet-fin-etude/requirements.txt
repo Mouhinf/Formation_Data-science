@@ -1,6 +1,2 @@
 streamlit
 opencv-python
-numpy
-tensorflow
-mtcnn
-Pillow
